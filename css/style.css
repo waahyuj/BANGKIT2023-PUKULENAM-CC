@@ -7,7 +7,41 @@
     width: 300px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
     font-size: 0.8rem;
+}
+
+.carousel-caption {
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+  
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    bottom: 3px;
+}
+  
+.carousel-indicators .btn-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    margin: 0 5px;
+    padding: 0;
+}
+  
+.carousel-indicators .active {
+    background-color: #FFF;
+}
+.btn-head:hover{
+    background-color: #ECECEC;
+    color: black;
+    transition: ease 360ms;
+    border: 2px solid #F85F56;
 }
