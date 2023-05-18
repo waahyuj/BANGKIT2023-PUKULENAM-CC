@@ -1,3 +1,43 @@
+/* warna titik slider */
+#range-slider-entertainment::-webkit-slider-thumb {
+    background-color: orange; 
+}
+#range-slider-gaming::-webkit-slider-thumb {
+    background-color: orange; 
+}
+#range-slider-tech::-webkit-slider-thumb {
+    background-color: orange; 
+}
+#range-slider-finance::-webkit-slider-thumb {
+    background-color: orange; 
+}
+#range-slider-health::-webkit-slider-thumb {
+    background-color: orange; 
+}
+#range-slider-sport::-webkit-slider-thumb {
+    background-color: orange; 
+}
+
+/* warna garis slider */
+#range-slider-entertainment::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-gaming::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-tech::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-finance::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-health::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+#range-slider-sport::-webkit-slider-runnable-track {
+    background-color: #F85F56;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,37 +51,23 @@
     font-size: 0.8rem;
 }
 
-.carousel-caption {
-    width: 100%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+.btn-headRole{
+    color: white;
+    border: 1px solid white;
 }
-  
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    bottom: 3px;
+.btn-headRole:hover{
+    background-color: white;
+    color: #F85F56;
+    border: 1px solid white;
 }
-  
-.carousel-indicators .btn-indicator {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: none;
-    background-color: #fff;
-    margin: 0 5px;
-    padding: 0;
+
+.btn-headTopic{
+    background-color: #F85F56;
+    color: white;
 }
-  
-.carousel-indicators .active {
-    background-color: #FFF;
-}
-.btn-head:hover{
-    background-color: #ECECEC;
-    color: black;
-    transition: ease 360ms;
-    border: 2px solid #F85F56;
+
+.btn-headTopic:hover{
+    background-color: white;
+    color: #F85F56;
+    border: 1px solid #F85F56;
 }
