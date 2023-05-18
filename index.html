@@ -26,16 +26,19 @@
 
 <body>
 
+    <!-- bagian header -->
     <header style="background-color: white;">
         <div class="container">
             <div class="d-flex align-items-center justify-content-center p-4">
                 <img src="assets/Logo.png" alt="Logo" width="50" class="img-fluid me-3">
-                <h1 class="fw-bold fs-4 m-0" style="color:#F85F56">PukulEnam</h1>
+                <h1 class="fw-bold fs-2 m-0" style="color:#F85F56">PukulEnam</h1>
             </div>
         </div>
     </header>
 
     <main>
+
+        <!-- Bagian input role Talent -->
         <section class="roleTalent p-1" style="background-color: #F85F56;">
             <div class="container col-9">
                 <h1 class="display-6 fw-bold text-center mt-5" style="color: #FFFFFF;">PUKULENAM TALENTS</h1>
@@ -55,9 +58,11 @@
             </div>
         </section>
 
+        <!-- Bagian input topic score Talent   -->
         <section class="topicTalent p-1" style="background-color: #F9FAEA;">
             <div class="container mb-5">
                 <div class="row">
+                    <!-- bagian kiri -->
                     <div class="col-6 mt-3 text-center text-light">
                         <form>
                             <div class="form-group">
@@ -76,8 +81,8 @@
                                 <output class="output" for="range-slider-tech" id="output-tech">2.5</output>
                             </div>
                         </form>
-
                     </div>
+                    <!-- bagian kanan -->
                     <div class="col-6 mt-3 text-center text-light">
                         <form>
                             <div class="form-group">
@@ -96,22 +101,24 @@
                                 <output class="output" for="range-slider-sport" id="output-sport">2.5</output>
                             </div>
                         </form>
-
                     </div>
                 </div>
+                <!-- button cari talent -->
                 <div class="text-center container mb-4 mt-5">
                     <button class="btn px-5 rounded-pill btn-headTopic fs-3" >Cari Talent</button>
                 </div>
             </div>
         </section>
 
+        <!-- Bagian output profil Talent -->
         <section class="profilTalent p-1" style="background-color: #F85F56;">
             <div class="container p-3">
                 <div class="row">
+                    <!-- Talent Internasional -->
                     <div class="col-6 mb-5">
-                        <!-- Internasional <main style="background-color: #ECECEC;">-->
                         <h1 class="text-center fs-1 mb-5 text-light">Internasional</h1>
-                        <div id="myCarousel" class="carousel slide carousel-sm mx-auto">
+                        <!-- Carousel/slider untuk foto Talent -->
+                        <div id="carouselNasional" class="carousel slide carousel-sm mx-auto">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="assets/talent1.jpg" class="d-block w-100">
@@ -123,23 +130,22 @@
                                     <img src="assets/talent3.jpg" class="d-block w-100">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
-                                data-bs-slide="prev">
+                            <!-- button next & prev pada carousel/slider-->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNasional" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
-                                data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselNasional" data-bs-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
                     </div>
-
-                    <!-- national carousel  -->
+                    <!-- Talnet nasional -->
                     <div class="col-6 mb-5">
                         <h1 class="text-center fs-1 mb-5 text-light">Nasional</h1>
-                        <div id="myCarousel2" class="carousel slide carousel-sm mx-auto">
+                        <!-- Carousel/slider untuk foto Talent -->
+                        <div id="carouselInternasional" class="carousel slide carousel-sm mx-auto">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="assets/talent1.jpg" class="d-block w-100">
@@ -151,37 +157,21 @@
                                     <img src="assets/talent3.jpg" class="d-block w-100">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2"
-                                data-bs-slide="prev">
+                            <!-- button next & prev pada carousel/slider-->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInternasional" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2"
-                                data-bs-slide="next" id="nextButton">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselInternasional" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
-                        <script>
-                            var myCarousel = document.getElementById('myCarousel2');
-                            var nextButton = document.getElementById('nextButton');
-
-                            myCarousel.addEventListener('slid.bs.carousel', function () {
-                                if (myCarousel.querySelector('.carousel-inner .carousel-item:last-of-type').classList.contains('active')) {
-                                    nextButton.disabled = true;
-                                } else {
-                                    nextButton.disabled = false;
-                                }
-                            });
-                        </script>
-
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- bagian Footer -->
     <footer style="background-color: white;">
         <div class="container">
             <div class="row">
@@ -197,9 +187,6 @@
 
     <!-- call main.js for output range -->
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
-
 </html>
